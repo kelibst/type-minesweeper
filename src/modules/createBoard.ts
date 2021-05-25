@@ -1,5 +1,6 @@
 import addFlag from "./addFlag";
 import clickSquare from "./clickSquare";
+import validate from "./validate";
 
 const createBoard = (width: number, grid: HTMLDivElement, squares: any[], bombAmount: number, isGameOver: boolean, flags: number, matches: number) => {
   const bombsArr = Array.from({ length: bombAmount }, i => 'bomb')
@@ -33,7 +34,7 @@ const createBoard = (width: number, grid: HTMLDivElement, squares: any[], bombAm
   //   };
   // }
 
-  // validate(width, squares);
+  validate(width, squares);
 };
 
 }
